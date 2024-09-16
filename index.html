@@ -145,25 +145,28 @@
       }
 
       .nav-bar li {
-        margin: 0 1rem;
+        margin: 0.4rem;
         font-family: 'Roboto', sans-serif;
+        position: static;
       }
 
       .nav-bar a {
+        
         font-weight: 200;
         text-decoration: none;
         color: inherit;
         font-size: 1.25rem;
         font-family: urae_nium;
-        font-size: 20px;
-        position: static;
+        font-size: 25px;
+        position:relative;
+        
       }
       .title-section, .subtitle-section {
         position: relative;
         
       }
       .main-section {
-        padding:  2rem;
+        padding:  3rem;
         padding-top:10rem;
         text-align: center;
         height:100vh;
@@ -178,6 +181,7 @@
         font-size: 25px;
         margin-bottom: 1rem;
         font-family: BrigendsExpanded;
+    
 
       }
 
@@ -442,6 +446,12 @@
         background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        min-width: 105%;
+        min-height: 100%;
+
 
         background-attachment: fixed;
         background-position: center center;
@@ -454,6 +464,8 @@
         filter: url(#goo) blur(70px);
         width: 100%;
         height: 100%;
+        
+        
       }
       
       .gradient-bg .g1 {
