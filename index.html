@@ -32,8 +32,8 @@
   <!-- ----------------DISEÑO--------------------------------------------------------------------------- -->
     <style>
       * {
-        /* margin: 0; */
-        /* padding: 0; */
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
         font-family: 'Satoshi', sans-serif;
 
@@ -133,7 +133,7 @@
         font-weight: 500;
         font-size: 60px;
         margin-bottom: 0.5rem;
-        position: static;
+        position:relative;
       }
 
       .nav-bar ul {
@@ -141,6 +141,7 @@
         justify-content: center;
         list-style: none;
         padding: 0;
+        position: static;
       }
 
       .nav-bar li {
@@ -149,12 +150,13 @@
       }
 
       .nav-bar a {
-        font-weight: 300;
+        font-weight: 200;
         text-decoration: none;
         color: inherit;
         font-size: 1.25rem;
         font-family: urae_nium;
-        font-size: 25px;
+        font-size: 20px;
+        position: static;
       }
       .title-section, .subtitle-section {
         position: relative;
@@ -433,7 +435,7 @@
       }
 
       .gradient-bg {
-        width: 100vw;
+        width: 200vw;
         height: 200vh;
         position: absolute;
         overflow: hidden;
@@ -445,7 +447,7 @@
         display: none;
       }
       .gradient-bg .gradients-container {
-        filter: url(#goo) blur(40px);
+        filter: url(#goo) blur(70px);
         width: 100%;
         height: 100%;
       }
