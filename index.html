@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Off The Wall</title>
 
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -15,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="color-scheme" content="light">
     <meta name="supported-color-schemes" content="light">
-
 
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <!-- ------------------------------------------------------------------------------------------- -->
@@ -37,8 +35,6 @@
         box-sizing: border-box;
         font-family: 'Satoshi', sans-serif;
 
-       
-
       }
 
       body {
@@ -49,18 +45,18 @@
         color: #2f2f2f;
         transition: background-color 0.5s, color 0.5s;
         width:100%;
+        height: 100%;
 
         --color-bg1: #4e4d4d;
-        --color-bg2: #5fbc8e;
+        --color-bg2: #242725;
         --color1: 30, 144, 255;/* azul */
         --color2: 105, 105, 105;
         --color3: 30, 144, 255;/* azul */
         --color4: 105, 105, 105;
         --color5: 149, 175, 192;
         --color-interactive: 140, 100, 255;
-        --circle-size:200%;
+        --circle-size: 200%;
         --blending: hard-light;
-        position:fixed;
 
       }
 
@@ -107,7 +103,7 @@
       .header {
         text-align: center;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1500px;
       }
 
       /* ---FUENTES IMPORTADASS------------------------------------------------------------------- */
@@ -440,18 +436,21 @@
       }
 
       .gradient-bg {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        overflow:hidden;
-        background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
-        /* top: 0;
-        left: 0;
-        right: 0;  */
+          width: 100vw;
+          height: 100vh;
+          position:fixed;
+          overflow: hidden;
+          background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+          top: 0;
+          left: 0;
 
-
+          background-attachment:fixed ;
+          background-position:center ;
+          background-repeat:no-repeat ;
+          background-size:cover ;
 
       }
+      
       .gradient-bg svg {
         display: none;
       }
@@ -531,7 +530,8 @@
   top: -50%;
   left: -50%;
   opacity: 0.7;
-}
+  }
+
 
 .hero {
   align-items: center;
@@ -543,26 +543,10 @@
 
 
 }
-
 /* --------------------------------------------------------------------- */
-
-
     </style>
-
   <!------------------DISEÑO--------------------------------------------------------------------------- -->
-
-
   </head>
-
-
-
-
-
-
- <!--------------------------------------------------------------------- ----------------------  -->
-
-
-
  <body>
   <!-- Background--------------------------------------------------------------------------------------------- -->
   <div class="gradient-bg">
@@ -588,7 +572,7 @@
   <!-- Background--------------------------------------------------------------------------------------------- -->
 
     <main data-scroll-container class="content" id="top">
-
+      
       <div class="top-bar">
 
         <div>
@@ -736,11 +720,13 @@
         </div>
       </footer>
     </main>
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+ 
   </body>
 </html>
 <!-- partial -->
