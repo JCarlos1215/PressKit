@@ -36,6 +36,18 @@
         font-family: 'Satoshi', sans-serif;
 
       }
+      .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem 1rem;
+      }
+
+      .team-member {
+        flex: 1 1 200px;
+        text-align: center;
+      }
 
       body {
         font-family: 'Satoshi', sans-serif;
@@ -205,18 +217,7 @@
 
       }
 
-      .team {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        padding: 2rem 1rem;
-      }
-
-      .team-member {
-        flex: 1 1 200px;
-        text-align: center;
-      }
+      
 
       footer {
         padding: 2rem 1rem;
@@ -569,16 +570,12 @@
     </div>
   </div>
 
-  <!-- Background--------------------------------------------------------------------------------------------- -->
-
+  <!-- Background-------------------------------------------------------------------------------------------- -->
     <main data-scroll-container class="content" id="top">
-      
       <div class="top-bar">
-
         <div>
           <a class="go" href="#top">Press kit</a>
         </div>
-
         <div id="dark-mode-toggle" class="toggle-button-cover">
           <div class="button r" id="toggle-button">
             <input type="checkbox" class="checkbox" />
@@ -586,16 +583,12 @@
             <div class="layer"></div>
           </div>
         </div>
-
       </div>
 
       <div class="header" data-scroll-section>
         <header><h1>OFF THE WALL</h1></header>
-
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-
         <nav class="nav-bar">
           <ul>
             <li><a href="#home" data-scroll>Bio</a></li>
@@ -606,14 +599,13 @@
             <li><a href="#contact" data-scroll>Contact0</a></li>
           </ul>
         </nav>
-       <br></br>
+
         <!-- <img class="hero" src="https://i.ibb.co/s1rKXyv/IMG-9121.jpg" alt="otw" loading="lazy" /> -->
       </div>
 
       <section id="home" class="main-section" data-scroll-section>
         <h2 class="title-section" data-scroll data-scroll-speed="1">Biografía / biography</h2>
         <p class="subtitle-section" data-scroll data-scroll-speed="2">text</p>
-
         <div class="swiper-container slider-column">
           <div class="swiper swiper-slider">
             <div class="swiper-wrapper">
@@ -653,7 +645,6 @@
         <h2 class="title-section" data-scroll data-scroll-speed="1">Discografía / Discography</h2>
         <p class="subtitle-section" data-scroll data-scroll-speed="2">info disc</p>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5n9i83lEsNOv5auYOKNR2A?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </section>
 
       <section id="portfolio" class="main-section" data-scroll-section>
@@ -665,7 +656,7 @@
         <h2 class="title-section" data-scroll data-scroll-speed="1">Rider técnico / Technical Rider</h2>
         <p class="subtitle-section" data-scroll data-scroll-speed="2" class="team"> descripcion</p>
 
-        <div class="team-member" data-scroll data-scroll-speed="2">
+        <!-- <div class="team-member" data-scroll data-scroll-speed="2">
           <img src="https://via.placeholder.com/150" alt="Team Member">
           <h3>imagen</h3>
           <p>img</p>
@@ -675,16 +666,17 @@
           <img src="https://via.placeholder.com/150" alt="Team Member">
           <h3>imagen</h3>
           <p>img</p>
-        </div>
+        </div> -->
 
 
 
       </section>
-      
+
         <section id="contact" class="main-section" data-scroll-section>
         <h2 class="title-section"  data-scroll data-scroll-speed="1">Contacto / Contact</h2>
         <p class="subtitle-section" data-scroll data-scroll-speed="2">contact inf</p>
-        <br><br>
+        <p><iframe style="border-radius:12px" 
+          src="https://open.spotify.com/embed/artist/5n9i83lEsNOv5auYOKNR2A?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p>
         
       </section>
 
